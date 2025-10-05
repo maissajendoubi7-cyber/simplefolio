@@ -116,24 +116,16 @@ Go to `/src/index.html` and put your information, there are 5 sections:
 
 - On `.hero-title`, put your custom portfolio title.
 - On `.hero-cta`, put your custom button label.
-
-```html
-<!-- **** Hero Section **** -->
-<section id="hero" class="jumbotron">
-  <div class="container">
-    <h1 class="hero-title load-hidden">
-      Hi, my name is <span class="text-color-main">Your Name</span>
-      <br />
-      I'm the Unknown Developer.
-    </h1>
-    <p class="hero-cta load-hidden">
-      <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">
-        Know more
-      </a>
-    </p>
+html
+<header id="header">
+  <div class="logo"><span class="icon fa-gem"></span></div>
+  <div class="content">
+    <div class="inner">
+      <h1>Jane Doe</h1>
+      <p>Web Developer | Designer | Creator</p>
+    </div>
   </div>
-</section>
-<!-- /END Hero Section -->
+</header>
 ```
 
 ### (2) About Section
@@ -199,66 +191,63 @@ Go to `/src/index.html` and put your information, there are 5 sections:
 
 - Inside `<div>` tag with class name `.project-wrapper__image`, put your project image url on the `src` of the `<img>` and put again your project url in the `href` property of the `<a>` tag.
 - Recommended size for project image (1366 x 767), your project image must be located inside `/src/assets/` folder.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Maïssa Jendoubi - Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #1e1e2f;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 { color: #333; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>👩‍💻 Maïssa Jendoubi</h1>
+    <p>Développeuse web | Passionnée de technologie</p>
+  </header>
 
-```html
-<!-- **** Projects Section **** -->
-<section id="projects">
-  ...
-  <!-- Notice: each .row is a project -->
-  <div class="row">
-    <div class="col-lg-4 col-sm-12">
-      <div class="project-wrapper__text load-hidden">
-        <h3 class="project-wrapper__text-title">Project Title</h3>
-        <div>
-          <p class="mb-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
-            neque, ipsa animi maiores repellendus distinctio aperiam earum dolor
-            voluptatum consequatur blanditiis inventore debitis fuga numquam
-            voluptate ex architecto itaque molestiae.
-          </p>
-        </div>
-        <a
-          rel="noreferrer"
-          target="_blank"
-          class="cta-btn cta-btn--hero"
-          href="#!"
-        >
-          See Live
-        </a>
-        <a
-          rel="noreferrer"
-          target="_blank"
-          class="cta-btn text-color-main"
-          href="#!"
-        >
-          Source Code
-        </a>
-      </div>
-    </div>
-    <div class="col-lg-8 col-sm-12">
-      <div class="project-wrapper__image load-hidden">
-        <a rel="noreferrer" href="#!" target="_blank">
-          <div
-            data-tilt
-            data-tilt-max="4"
-            data-tilt-glare="true"
-            data-tilt-max-glare="0.5"
-            class="thumbnail rounded js-tilt"
-          >
-            <img
-              alt="Project Image"
-              class="img-fluid"
-              src="assets/project.jpg"
-            />
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-  <!-- /END Project -->
-  ...
-</section>
-```
+  <section>
+    <h2>À propos de moi</h2>
+    <p>Je suis développeuse web en formation, j’aime créer des sites modernes et utiles.</p>
+  </section>
+
+  <section>
+    <h2>Mes projets</h2>
+    <ul>
+      <li>🌐 <strong>Nsi7a</strong> — Site de conseils et échanges entre utilisateurs</li>
+      <li>☀️ Application météo en JavaScript</li>
+      <li>💻 Mini blog avec HTML & CSS</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:maissa@example.com">maissa@example.com</a></p>
+    <p>GitHub : <a href="https://github.com/tonnom">github.com/tonnom</a></p>
+  </section>
+</body>
+</html>
+
 
 ### (4) Contact Section
 
